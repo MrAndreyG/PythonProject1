@@ -1,13 +1,31 @@
 from math import fabs
+from os import system
 from tkinter import Variable
 from warnings import catch_warnings
 import matplotlib.pyplot as plot
 import numpy as nmp
 import hello as hlp
-#from standardplot import ArrayListofNumbers
+import sys
 
 
-InputedData= input("InputArrayData:").split(';')
+
+
+
+splittedData=input("InputArrayData:").split(';')
+print(splittedData)
+
+InputedData= map(int, splittedData)
+
+try:
+    Data1=120
+except:
+    print("Wrong number, please input another!")
+    sys.exit(1)
+
+print(InputedData)
+list_of_integers = list(InputedData)
+print(list_of_integers)
+
 InputedDataY=input("InputArrayData1:").split(';')
 #SubData=InputedData.split(';')
 
