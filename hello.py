@@ -1,5 +1,5 @@
 msg="Hi, how are You?"
-print(msg)
+print(msg+"Hello doc")
 
 #msg1 = msg.center(5)
 #print(msg1)
@@ -15,4 +15,7 @@ print(msg)
 
 #msg5=msg.split(' ')
 #print(msg5)
+
+def GlobalGetData(X):
+    return X+2
 
